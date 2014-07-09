@@ -36,6 +36,18 @@
 })(jQuery);
 
 $(document).ready(function () {
+    $("#e1").select2();
     $('.table').tableAddCounter();
     $.getScript("http://code.jquery.com/ui/1.9.2/jquery-ui.js").done(function (script, textStatus) { $('tbody').sortable();$(".alert-info").alert('close');$(".alert-success").show(); });
+
+    $.getJSON('js/data.json', function(data){
+        var items = [];
+          $.each( data, function( key, val ) {
+            items.push( "<td id='" + key + "'>" + val + "</td>" );
+          });
+          $( "<tr/>", {
+            "class": "company-row",
+            html: items.join( "" )
+          }).appendTo( ".table" );
+        })
 });

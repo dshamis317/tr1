@@ -7,19 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Column Portfolio Template for Bootstrap 3</title>
+    <title>Financialer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
     <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet"/>
 </head>
 
 <body>
 
 
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <nav style="background-color: darkblue;" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -28,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://startbootstrap.com">Start Bootstrap</a>
+                <a class="navbar-brand" href="http://startbootstrap.com">Financialer</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,8 +50,11 @@
 
     <div class="container">
 
-    <select action="/apis" method="post">
-
+    <select style="margin: 10px;" id="e1" action="/apis" method="post">
+        <option value="AL">SELECT INDUSTRY</option>
+        <option value="AL">Healthcare</option>
+        <option value="WY">Energy</option>
+        <option value="WY">Finance</option>
     </select>
 
 <div class="container">
@@ -58,103 +62,39 @@
         <div class="col-md-12">
             <div class="alert alert-info">
                 Healthcare Companies</div>
-            <div class="alert alert-success" style="display:none;">
-                <span class="glyphicon glyphicon-ok"></span> Drag table row and cange Order</div>
             <table class="table">
                 <thead>
-                    <tr>
-                        <th>
-                            Company Name
-                        </th>
-                        <th>
-                            Trading Price
-                        </th>
-                        <th>
-                            Market Cap.
-                        </th>
-                        <th>
-                            Recent News
-                        </th>
-                    </tr>
+                    <td>Company Name</td>
+                    <td>Ticker/RIC</td>
+                    <td>Market Cap</td>
+                    <td>Current Price</td>
                 </thead>
-                <tbody>
-                    <tr class="active">
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
+                <tbody class="">
+                    <tr>
+                        <td>Amgen Inc.</td>
+                        <td>AMGN</td>
+                        <td>$90.81B</td>
+                        <td>$119.96</td>
                     </tr>
                     <tr>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                    </tr>
-                    <tr class="success">
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
+                        <td>GlaxoSmithKline</td>
+                        <td>GSK</td>
+                        <td>$129.65B</td>
+                        <td>$53.36</td>
                     </tr>
                     <tr>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                    </tr>
-                    <tr class="warning">
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
+                        <td>Johnson & Johnson</td>
+                        <td>JNJ</td>
+                        <td>$299.09B</td>
+                        <td>$105.72</td>
                     </tr>
                     <tr>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
+                        <td>Pfizer</td>
+                        <td>PFE</td>
+                        <td>$192.12B</td>
+                        <td>$30.15</td>
                     </tr>
-                    <tr class="danger">
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                        <td>
-                            Column content
-                        </td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
@@ -163,117 +103,27 @@
 
         <div class="row">
 
-            <div class="col-lg-7 col-md-7">
+            <div style="margin:10px;" class="col-lg-3 col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                    <img class="img-responsive" src="http://www.iliplaw.com/.a/6a0112793f1c9d28a4017c3275c3fc970b-pi" alt="">
                 </a>
             </div>
 
-            <div class="col-lg-5 col-md-5">
-                <h3>Project One</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="col-lg-4 col-md-5">
+                <h3>Competition</h3>
+                <ul>
+                    <li>Merck</li>
+                    <li>Eli Lilly</li>
+                    <li>Bristol-Myers</li>
+                </ul>
             </div>
 
-        </div>
-
-        <hr>
-
-        <div class="row">
-
-            <div class="col-lg-7 col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-lg-5 col-md-5">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="row">
-
-            <div class="col-lg-7 col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-lg-5 col-md-5">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="row">
-
-            <div class="col-lg-7 col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-lg-5 col-md-5">
-                <h3>Project Four</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="row">
-
-            <div class="col-lg-7 col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-lg-5 col-md-5">
-                <h3>Project Five</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="row text-center">
-
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a>
-                    </li>
-                    <li class="active"><a href="#">1</a>
-                    </li>
-                    <li><a href="#">2</a>
-                    </li>
-                    <li><a href="#">3</a>
-                    </li>
-                    <li><a href="#">4</a>
-                    </li>
-                    <li><a href="#">5</a>
-                    </li>
-                    <li><a href="#">&raquo;</a>
-                    </li>
+            <div class="col-lg-4 col-md-5">
+                <h3>Medical Indications</h3>
+                <ul>
+                    <li>Hypertension</li>
+                    <li>Cardiovascular Disease</li>
+                    <li>Diabetes</li>
                 </ul>
             </div>
 
@@ -281,13 +131,33 @@
 
         <hr>
 
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Company 2013</p>
-                </div>
+        <div class="row">
+
+            <div style="margin:10px;" class="col-lg-3 col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://www.cimaglobal.com/Global/Images/Employers/2013refresh/glaxosmithkline-logo-large.gif" alt="">
+                </a>
             </div>
-        </footer>
+
+            <div class="col-lg-4 col-md-5">
+               <h3>Competition</h3>
+                <ul>
+                    <li>Forrest</li>
+                    <li>Allergan</li>
+                    <li>Perrigo Company</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-5">
+                <h3>Medical Indications</h3>
+                <ul>
+                    <li>Sun Burn</li>
+                    <li>High Blood Pressure</li>
+                    <li>Angina</li>
+                </ul>
+            </div>
+
+        </div>
 
     </div>
     <!-- /.container -->
@@ -295,7 +165,8 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script src="js/tablesnip.js"></script>
+    <script src="js/select2.js"></script>
 </body>
 
 </html>
