@@ -16,12 +16,10 @@ Allergan - AGN.N
 Bristol-Myers - BMY.N
 Eli Lilly - LLY.N
 Forest Labs - FRX.N
-Hospira - HSP.N
 Johnson & Johnson - JNJ.N
 Merck & Co. - MRK.N
 Perrigo Company - PRGO.N
 Pfizer - PFE.N
-Zoetis - ZTS.N
 
 Integrated Oil & Gas
 Chevron - CVX.N
@@ -38,3 +36,12 @@ var url = "https://api.apigarden.thomsonreuters.com/v1/financial/Companies/RIC:"
 
 Basic Data
 var url = "https://api.apigarden.thomsonreuters.com/v1/financial/Companies/RIC:"+ricID+"?X-TR-API-APP-ID=Gmrr3JDTogvr8i4c32jONzJ8UAtYsDnL"
+
+// $.ajax({
+//   url: url,
+//   method: 'get',
+//   dataType: 'json',
+//   success: function(data) {
+
+//   }
+// })
