@@ -1,5 +1,3 @@
-Gmrr3JDTogvr8i4c32jONzJ8UAtYsDnL
-
 Biotechnology
 Alexion Pharm - ALXN.OQ
 Amgen - AMGN.OQ
@@ -17,9 +15,9 @@ Bristol-Myers - BMY.N
 Eli Lilly - LLY.N
 Forest Labs - FRX.N
 Johnson & Johnson - JNJ.N
-Merck & Co. - MRK.N
+Merck & Co. - MRK.N ... 18077
 Perrigo Company - PRGO.N
-Pfizer - PFE.N
+Pfizer - PFE.N ... 18767
 
 Integrated Oil & Gas
 Chevron - CVX.N
